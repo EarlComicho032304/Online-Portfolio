@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hi, I'm Erwin Paul C. Caoile, a Web Developer</p>
+    <a href="#projects" class="btn">View My Projects</a>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
+  </nav>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <img src="Image/1.jpg" alt="Description of the image">
+    <p>
+      I'm Erwin Paul C. Caoile but u can call me Earl, a passionate a dedicated and passionate Web Developer. With expertise in HTML, CSS, JavaScript, and React, I create dynamic and user-friendly web applications.
+      In my free time, I enjoy doing some ArmWrestling, Biking, Haking and coding or or exploring new technologies.
+    </p>
+    <div class="image-gallery">
+    <img src="Image/2.jpg" alt="ArmWrestling">
+    <img src="Image/3.jpg" alt="Biking">
+    <img src="Image/4.jpg" alt="Haking">
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>This is my first time building a website. I'm proud of my work because I did it well and perfectly.</p>
+        <li><a href="https://github.com/UCALDION/sinkssys.git">https://github.com/UCALDION/sinkssys.git</a></li>
+      </div>
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>This is my second project, and it's nice to work on this website.</p>
+        <li><a href="https://github.com/EarlComicho032304/web_app1.git">https://github.com/EarlComicho032304/web_app1.git</a></li>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Erwin Paul C. Caoile. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f4f4f4;
+}
+
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: #007bff;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  background: #fff;
+  color: #007bff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.hero .btn:hover {
+  background: #0056b3;
+  color: white;
+}
+
+/* Navigation Bar */
+nav {
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Section Styling */
+.section {
+  padding: 40px 20px;
+  text-align: center;
+  background: white;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Image Styling */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Image Gallery */
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.image-gallery img {
+  max-width: 300px; /* Set a fixed max-width for the images */
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  padding: 20px;
+  background: #007bff;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #333;
+  color: white;
+  margin-top: 20px;
+}
+</style>
